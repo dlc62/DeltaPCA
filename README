@@ -1,0 +1,32 @@
+Usage:
+------
+
+pca.py -npt <number_of_spectral_data_points> -samp <sample_file_names> -ref <reference_file_name/s>
+
+Optional arguments:
+-skf <number_of_data_points_to_drop_from_start_of_spectrum>
+-skl <number_of_data_points_to_drop_from_end_of_spectrum>
+-name <name_for_labelling_output_files>
+-npc <number_of_loading_vectors_to_print> (set to 1 by default)
+-lam <lambda_value_for_baselining> (set to 10^6 by default)
+
+Notes:
+------
+For analysing paired samples and reference spectra, the number of specified sample files
+must be the same as the number of specified reference files, and they must be listed in
+the same order.
+To analyse a series of sample files against a common reference, multiple sample files may 
+be listed, but only a single reference file can be.
+
+Format of data files:
+---------------------
+Data files must be in .csv format. The left-most column must be the Raman shift wavelengths. 
+Each subsequent column may contain a replicate spectrum. 
+Alternatively, spectra may be "stacked" on top of one another down the 2nd column.
+The Raman shift wavelengths may also be stacked down the first column although this is optional.
+A single-line header may be included. This too is optional.
+
+Examples:
+---------
+May be found in the "Examples" directory. The commands required to run each set of examples
+are in the .run scripts. 
