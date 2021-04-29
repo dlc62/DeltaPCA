@@ -1,0 +1,1 @@
+../PCA/pca.py -npt 1024 -samp A_1nM.csv P_1nM.csv -ref Tris.csv -skf 100 -name Tris_ref_A_P_1nM

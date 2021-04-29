@@ -1,0 +1,1 @@
+../PCA/pca.py -npt 1024 -samp A+P_1pM.csv A+P_500pM.csv A+P_1nM.csv -ref A_1pM.csv A_500pM.csv A_1nM.csv -skf 100 -name A_A+P_compare
